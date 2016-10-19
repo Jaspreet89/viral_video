@@ -6,7 +6,7 @@
   var socket = io();
   var snapshot = function() {
     if (localMediaStream) {
-      ctx.drawImage(video, 0, 0);
+      ctx.drawImage(video, 0, 0,100,100);
       var img = canvas.toDataURL('image/webp');
       var blob = BinaryUtil.base64ToBinary(img);
       socket.emit("image", blob);

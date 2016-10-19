@@ -12,7 +12,7 @@ var sioredis = require('socket.io-redis');
 app.use(express.static(__dirname + "/public"));
 io.on('connection', function(socket){
   socket.on('image', function(data){
-    socket.broadcast.volatile.emit('image', {
+    socket.broadcast.emit('image', {
       id: socket.id,
       blob: data
     });
