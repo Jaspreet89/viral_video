@@ -1,19 +1,15 @@
 {
-  "name": "angular-webrtc",
+  "name": "socket.io-videodemo",
   "version": "0.0.0",
-  "description": "angular-webrtc",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "PORT=6000 node app.js & PORT=6001 node app.js & PORT=6002 node app.js & PORT=6003 node app.js"
   },
-  "repository": {
-    "type": "git"
-  },
-  "author": "mgechev",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.10.6",
-    "node-uuid": "^1.4.2",
-    "socket.io": "latest"
+    "express": "^4.4.3",
+    "socket.io": "^1.0.5"
   }
 }
